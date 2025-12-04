@@ -21,8 +21,9 @@ import type {
  */
 import {
   Briefcase,
-  Facebook,
+  Linkedin,
   FileText,
+  Github,
   Globe,
   Home,
   Instagram,
@@ -62,13 +63,13 @@ const navLinks: LinksType[] = [
 
 const socialLinks: LinksType[] = [
   {
-    icon: Facebook,
-    label: 'Facebook',
+    icon: Linkedin,
+    label: 'Linkedin',
     link: '/#',
   },
   {
-    icon: Instagram,
-    label: 'Instagram',
+    icon: Github,
+    label: 'Github',
     link: '/#',
   },
   {
@@ -76,11 +77,11 @@ const socialLinks: LinksType[] = [
     label: 'Twitter',
     link: '/#',
   },
-  {
-    icon: Youtube,
-    label: 'Youtube',
-    link: '/#',
-  },
+  // {
+  //   icon: Discord,
+  //   label: 'Youtube',
+  //   link: '/#',
+  // },
 ];
 
 const projectsData: ProjectType[] = [
