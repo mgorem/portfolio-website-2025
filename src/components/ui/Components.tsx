@@ -32,9 +32,9 @@ export const Profile = () => {
             </div>
 
             <img 
-            src="portfolio-profile-orem.jpg" 
+            src="cartoon_pic.jpeg" 
             alt="Orem"
-            className="lg:w-96   rounded-2xl object-cover" 
+            className="lg:w-96 rounded-2xl object-cover" 
             />
             <div className="mt-6">
                 <p className="text-sm text-neutral-300">Specialization:</p>
