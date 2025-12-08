@@ -40,7 +40,7 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 
-  --font-syne: 'Syne', sans-serif;
+  --font-montserrat: 'Montserrat', sans-serif;
 }
 
 :root {
@@ -121,6 +121,6 @@
     @apply scroll-smooth;
   }
   body {
-    @apply bg-background text-foreground font-syne;
+    @apply bg-background text-foreground font-montserrat;
   }
 }
