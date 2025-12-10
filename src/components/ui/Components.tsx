@@ -17,6 +17,7 @@ import { cn } from "@/lib/utils";
  * Constants
  */
 import { socialLinks } from "@/constants"
+import { Button } from "./button";
 
 export const Profile = () => {
     return (
@@ -28,18 +29,18 @@ export const Profile = () => {
                 <h1 className="text-3xl font-bold">Orem</h1>
 
 
-                <p className="text-sm">DevSecOps Engineer</p>
+                <p className="text-sm">DevOps Engineer</p>
             </div>
 
             <img 
-            src="portfolio-profile-orem.jpg" 
+            src="cartoon_pic.jpeg" 
             alt="Orem"
-            className="lg:w-96   rounded-2xl object-cover" 
+            className="lg:w-96 rounded-2xl object-cover" 
             />
             <div className="mt-6">
                 <p className="text-sm text-neutral-300">Specialization:</p>
 
-                <p className="text-lg capitalize">Security Engineer with Software Development Background</p>
+                <p className="text-lg capitalize">DevOps Engineer with Software Development/Security Background</p>
             </div>
 
             <div>
@@ -47,6 +48,27 @@ export const Profile = () => {
 
                 <p className="text-lg capitalize">Based in Sydney, Australia</p>
             </div>
+            <div className="flex gap-3 pt-2
+            text-neutral-500">
+                {socialLinks.map((social, i) => {
+                    const Icon = social.icon;
+                    return (
+                        <a 
+                        key={i}
+                        href={social.link}
+                        className="hover: text-primary
+                        border-2 border-neutral-500 p-2
+                        rounded-full hover:border-primary transition-duration-200"
+                        >
+                            <Icon className="size-6" />
+                        </a>
+                    );
+                })}
+            </div>
+            <Button className="mt-2"
+            size="lg">
+                Let's Connect
+            </Button>
         </div>
     </aside>
     );
